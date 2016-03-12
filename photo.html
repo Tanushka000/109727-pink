@@ -6,146 +6,117 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__logo">
-        <img src="#" width="70" height="22" alt="logo">	
-      </div>
+      <a class="page-header__logo" href="index.html">Pink</a>
       <nav class="main-nav">
         <span class="main-nav__toggle  main-nav__toggle--closed">Открыть меню</span>
         <div class="main-nav__wrapper  main-nav__wrapper--closed">
           <ul class="main-nav__items">
-            <li class="main-nav__item"><a href="#">ГЛАВНАЯ</a></li>
-            <li class="main-nav__item"><a href="#">ФОТОГРАФИИ</a></li>            
-            <li class="main-nav__item"><a href="#">КОНКУРС</a></li>
-            <li class="main-nav__item"><a href="#">HTML ACADEMY</a></li>                                 	
-          </ul>        	
-        </div>      	
-      </nav>    	
-    </header>
-    <section class="photo">
-      <div class="photo__wrapper">
-        <div class="photo__slogan">
-          <h1>Взгляните на фотографии, которые <br> выкладывают пользователи!<br> Видите, как не хватает ваших?</h1> 
+            <li class="main-nav__item"><a href="index.html">Главная</a></li>
+            <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+            <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+            <li class="main-nav__item"><a href="https://htmlacademy.ru">Html Academy</a></li>
+          </ul>
         </div>
-      </div>    	
-    </section>
+      </nav>
+      <h1 class="page-header__title">Фотографии пользователей</h1>
+    </header>
     <section class="photo-content">
       <div class="photo-content__wrapper">
-        <div class="photo-content__items">
-          <div class="photo-content__item">
-            <a href="#"><img src="#" width="320" height="137" alt="панорама дня"></a>
-            <b class="photo-content__name">ПАНОРАМА ДНЯ</b>
-            <blockquote class="photo-content__text">
-              <cite class="photo-content__auhor-name"><span>Анна</span>(5 минут назад)</cite>
-              <p>Прыгать или нет? Напишите в <br> коментарии свой совет и смотрите<br> прямую транслацию в перископе,<br> задавайте свои вопросы!</p> 
-              <a href="#" class="photo-content__like">НРАВИТСЯ: 215</a>           
-            </blockquote>          	
+        <h2 class="photo-content__slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
+        <div class="photos">
+          <div class="photo photo--panorama">
+            <a class="photo__link" href="#"><img src="#" width="320" height="137" alt="панорама дня"></a>
+            <b class="photo__name">Панорама дня</b>
+            <div class="photo__description">
+              <p class="photo__auhor-name"><span>Анна</span>(5 минут назад)</p>
+              <p>Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
+              <a href="#" class="like">НРАВИТСЯ: <span>215</span></a>
+            </div>
           </div>
-          <div class="photo-content__item">
-            <a href="#"><img src="#" width="280" height="180" alt="машина"></a>
-            <blockquote class="photo-content__text">
-              <cite class="photo-content__auhor-name"><span>Левон</span>(5 часов назад)</cite>
-              <p>Вчера он на луну летал, сегодня в руки <br>к нам попал.</p> 
-              <a href="#" class="photo-content__like">НРАВИТСЯ: 356</a>           
-            </blockquote>           
+          <div class="photo">
+            <a class="photo__link" href="#"><img src="#" width="280" height="180" alt="машина"></a>
+            <div class="photo__description">
+              <p class="photo__auhor-name"><span>Левон</span>(5 часов назад)</p>
+              <p>Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <a href="#" class="like">НРАВИТСЯ: <span>356</span></a>
+            </div>
           </div>
-          <div class="photo-content__item">
-            <a href="#"><img src="#" width="280" height="180" alt="барабаны"></a>
-            <blockquote class="photo-content__text">
-              <cite class="photo-content__auhor-name"><span>Антон</span>(12 часов назад)</cite>
-              <p>Соседи будут рады!</p> 
-              <a href="#" class="photo-content__like">НРАВИТСЯ: 666</a>           
-            </blockquote>           
+          <div class="photo">
+            <a class="photo__link" href="#"><img src="#" width="280" height="180" alt="барабаны"></a>
+            <div class="photo__description">
+              <p class="photo__auhor-name"><span>Антон</span>(12 часов назад)</p>
+              <p>Соседи будут рады!</p>
+              <a href="#" class="like">НРАВИТСЯ: <span>666</span></a>
+            </div>
           </div>
-          <div class="photo-content__item">
-            <a href="#"><img src="#" width="280" height="180" alt="окна"></a>
-            <blockquote class="photo-content__text">
-              <cite class="photo-content__auhor-name"><span>Борис</span>(20 часов назад)</cite>
-              <p>Здесь могла быть ваша цитата о <br> высоком и вечном.</p> 
-              <a href="#" class="photo-content__like">НРАВИТСЯ: 215</a>           
-            </blockquote>           
+          <div class="photo">
+            <a class="photo__link" href="#"><img src="#" width="280" height="180" alt="окна"></a>
+            <div class="photo__description">
+              <p class="photo__auhor-name"><span>Борис</span>(20 часов назад)</p>
+              <p>Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <a href="#" class="like">НРАВИТСЯ: <span>215</span></a>
+            </div>
           </div>
-          <div class="photo-content__item">
-            <a href="#"><img src="#" width="280" height="180" alt="кубанская бахча"></a>
-            <blockquote class="photo-content__text">
-              <cite class="photo-content__auhor-name"><span>Сергей</span>(25 часов назад)</cite>
-              <p>Самая кубанская в мире!</p> 
-              <a href="#" class="photo-content__like">НРАВИТСЯ: 4</a>           
-            </blockquote>           
+          <div class="photo">
+            <a class="photo__link" href="#"><img src="#" width="280" height="180" alt="кубанская бахча"></a>
+            <div class="photo__description">
+              <p class="photo__auhor-name"><span>Сергей</span>(25 часов назад)</p>
+              <p>Самая кубанская в мире!</p>
+              <a href="#" class="like">НРАВИТСЯ: <span>4</span></a>
+            </div>
           </div>
-          <div class="photo-content__item">
-            <a href="#"><img src="#" width="280" height="180" alt="нет снега"></a>
-            <blockquote class="photo-content__text">
-              <cite class="photo-content__auhor-name"><span>Максим</span>(40 часов назад)</cite>
-              <p>Где снег-то?</p> 
-              <a href="#" class="photo-content__like">НРАВИТСЯ: 150</a>           
-            </blockquote>           
+          <div class="photo">
+            <a class="photo__link" href="#"><img src="#" width="280" height="180" alt="нет снега"></a>
+            <div class="photo__description">
+              <cite class="photo__auhor-name"><span>Максим</span>(40 часов назад)</cite>
+              <p>Где снег-то?</p>
+              <a href="#" class="like">НРАВИТСЯ: <span>150</span></a>
+            </div>
           </div>
-          <div class="photo-content__item">
-            <a href="#"><img src="#" width="280" height="180" alt="вид с самолета"></a>
-            <blockquote class="photo-content__text">
-              <cite class="photo-content__auhor-name"><span>Надежда</span>(45 часов назад)</cite>
-              <p>Всем GM и взаимные лайки!</p> 
-              <a href="#" class="photo-content__like">НРАВИТСЯ: 2560</a>           
-            </blockquote>           
+          <div class="photo">
+            <a class="photo__link" href="#"><img src="#" width="280" height="180" alt="вид с самолета"></a>
+            <div class="photo__description">
+              <cite class="photo__auhor-name"><span>Надежда</span>(45 часов назад)</cite>
+              <p>Всем GM и взаимные лайки!</p>
+              <a href="#" class="like">НРАВИТСЯ: <span>2560</span></a>
+            </div>
           </div>
-          <div class="photo-content__slogan">
-            <h2>Затмите их всех! <br>Выкладывайте все, что накопилось в <br>телефоне!</h2>            
-          </div>        	
-        </div>      	
-      </div>    	
+        </div>
+      </div>
     </section>
     <section class="edit">
       <div class="edit__wrapper">
-        <div class="edit__photo">
-          <img src="#" width="280" height="374" alt="photo">          
+        <h2 class="edit__slogan">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
+        <form class="form" action="#">
+          <div class="form__photo">
+            <img src="#" width="280" height="374" alt="ваше фото">
+          </div>
+          <div class="form__controls">
+            <a href="#" class="form__controls-link  form__controls-link--clip">обрезать</a>
+            <a href="#" class="form__controls-link  form__controls-link--fill">залить</a>
+            <a href="#" class="form__controls-link  form__controls-link--contrast">контраст</a>
+            <input type="range" class="photo__controls-range">
+          </div>
+          <button class="btn" type="submit">Запостить</button>
+          <button class="btn btn--cancel">Отмена</button>
         </div>
-        <div class="edit__items">
-          <div class="edit__item edit__item--active">
-            <a href="#"><img src="#" width="44" height="44" alt="обрезать"></a>
-            <div class="edit__range-filter">
-              <div class="edit__range-controls">
-                <div class="edit__scale">
-                  <div class="bar"></div>
-                </div>
-                <div class="toggle toggle-min"></div>
-                <div class="toggle toggle-max"></div>
-              </div>          
-            </div>            
-          </div>
-          <div class="edit__item">
-            <a href="#"><img src="#" width="48" height="43" alt="залить"></a>            
-          </div>
-          <div class="edit__item">
-            <a href="#"><img src="#" width="48" height="43" alt="контраст"></a>            
-          </div>
-          <button class="edit__btn btn" type="submit">Запостить</button>
-          <button class="edit__btn btn">Отмена</button>          
-        </div>        
-      </div>      
+      </form>
     </section>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__logo">
-          <img src="#" width="147" height="40" alt="pink-logo">         
+          <img src="#" width="147" height="40" alt="pink-logo">
         </div>
-        <div class="page-footer__social">
-          <a href="#" class="page-footer__social-btn page-footer__social-btn--twitter">
-            <img src="#" width="18" height="14" alt="twitter">
-          </a>
-          <a href="#" class="page-footer__social-btn page-footer__social-btn--facebook">
-            <img src="#" width="9" height="18" alt="facebook">
-          </a>
-          <a href="#" class="page-footer__social-btn page-footer__social-btn--youtube">
-            <img src="#" width="15" height="13" alt="youtube">
-          </a>          
+        <div class="social-links">
+          <a class="social-links__link social-links__link--tweeter" href="#">Tweeter</a>
+          <a class="social-links__link social-links__link--facebook" href="#">Facebook</a>
+          <a class="social-links__link social-links__link--vimeo" href="#">Vimeo</a>
         </div>
         <div class="page-footer__developer">
-          <p>разработано</p>
-          <a href="#" class="page-footer__developer-logo">
-            <img src="#" width="27" height="34" alt="html-academy">
-          </a>          
-        </div>        
-      </div>    
-    </footer>	
+          <span>разработано</span>
+          <a class="page-footer__developer-link" href="https://htmlacademy.ru">Html academy</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
