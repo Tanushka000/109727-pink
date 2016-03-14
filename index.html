@@ -34,7 +34,9 @@
     </div>
     <section class="advantages">
       <div class="advantages__wrapper">
-        <h2 class="advantages__slogan">Устали от серости мегаполиса? Нам есть, что вам предложить!</h2>
+        <h2 class="advantages__slogan">
+          <span class="advatages__slogan-text">Устали от серости мегаполиса?</span>
+          <span class="advatages__slogan-text">Нам есть, что вам предложить!</span></h2>
         <div class="advantages__items">
         	<div class="advantages__item">
         	  <h3 class="advantages__item-title">Поднимает настроение</h3>
@@ -90,25 +92,24 @@
           </div>
           <table class="prices__table">
             <tr>
-              <th class="prices__table-header"><span class="prices__table-header-bold">база</span>1,99 usd</th>
-              <th class="prices__table-header"><span class="prices__table-header-bold">стандарт</span>3,99 usd
-                <div data-qwert="ХИТ">ХИТ</div></th>
-              <th class="prices__table-header"><span class="prices__table-header-bold">анлим</span>9,99 usd</th>
+              <th class="table-header"><span class="table-header--bold">база</span>1,99 usd</th>
+              <th class="table-header" data-title="ХИТ"><span class="table-header--hit">хит</span><span class="table-header--bold">стандарт</span>3,99 usd</th>
+              <th class="table-header"><span class="table-header--bold">анлим</span>9,99 usd</th>
             </tr>
             <tr>
-              <td class="prices__table-item">розовый фильтр<span class="prices__table-item--included">да</span></td>
-              <td class="prices__table-item">розовый фильтр<span class="prices__table-item--included">да</span></td>
-              <td class="prices__table-item">розовый фильтр<span class="prices__table-item--included">да</span></td>
+              <td class="table-item">розовый фильтр<span class="table-item--included">да</span></td>
+              <td class="table-item">розовый фильтр<span class="table-item--included">да</span></td>
+              <td class="table-item">розовый фильтр<span class="table-item--included">да</span></td>
             </tr>
             <tr>
-              <td class="prices__table-item">смайлики <span class="prices__table-item--not-included">нет</span></td>
-              <td class="prices__table-item">смайлики <span class="prices__table-item--included">да</span></td>
-              <td class="prices__table-item">смайлики <span class="prices__table-item--included">да</span></td>
+              <td class="table-item">смайлики <span class="table-item--not-included">нет</span></td>
+              <td class="table-item">смайлики <span class="table-item--included">да</span></td>
+              <td class="table-item">смайлики <span class="table-item--included">да</span></td>
             </tr>
             <tr>
-              <td class="prices__table-item">комментарии <span class="prices__table-item--not-included">нет</span></td>
-              <td class="prices__table-item">комментарии <span class="prices__table-item--not-included">нет</span></td>
-              <td class="prices__table-item">комментарии <span class="prices__table-item--included">да</span></td>
+              <td class="table-item">комментарии <span class="table-item--not-included">нет</span></td>
+              <td class="table-item">комментарии <span class="table-item--not-included">нет</span></td>
+              <td class="table-item">комментарии <span class="table-item--included">да</span></td>
             </tr>
           </table>
         </div>
@@ -116,14 +117,20 @@
     </section>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="page-footer__contacts">
-          <h2 class="page-footer__slogan"> Остались вопросы?<br>Свяжитесь с нами!</h2>
-          <b class="page-footer__item-header">Звоните:<br>
-          <a href="tel:+7(812)555-66-66">+7 (812) 555-66-66</a>
-          <b class="page-footer__item-header">Пишите:</b><br>
-          <a href="mailto:mail@htmlacademy.ru" class="page-footer__email">mail@htmlacademy.ru</a><br>
-          <b class="page-footer__item-header">Приезжайте в гости:</b><br>
-          <span class="page-footer-item">ул. Большая <br> Конюшенная, 19/8</span>
+        <div class="contacts">
+          <h2 class="contacts__slogan"> Остались вопросы? Свяжитесь с нами!</h2>
+          <div class="contacts__item">
+            <b class="contacts__item-info">Звоните:</b>
+            <a class="contacts__text" href="tel:+7(812)555-66-66">+7 (812) 555-66-66</a>
+          </div>
+          <div class="contacts__item">
+            <b class="contacts__item-info">Пишите:</b>
+            <a class="contacts__text" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </div>
+          <div class="contacts__item">
+            <b class="contacts__item-info">Приезжайте в гости:</b>
+            <span class="contacts__text">ул. Большая Конюшенная, 19/8</span>
+          </div>
         </div>
       </div>
       <div class="page-footer__map"></div>
