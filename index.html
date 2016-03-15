@@ -2,11 +2,139 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <title>Pink</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+    <header class="page-header">
+      <a class="page-header__logo" href="index.html">Pink</a>
+      <nav class="main-nav">
+        <span class="main-nav__toggle  main-nav__toggle--closed">Открыть меню</span>
+        <div class="main-nav__wrapper  main-nav__wrapper--closed">
+          <ul class="main-nav__items">
+            <li class="main-nav__item"><a href="index.html">Главная</a></li>
+            <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+            <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+            <li class="main-nav__item"><a href="https://htmlacademy.ru">Html Academy</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="info-download">
+    	  <h1 class="info-download__slogan">Взгляните на жизнь иначе!</h1>
+    	  <section class="download">
+          <a class="btn  btn--round" href="#">Скачать приложение</a>
+          <div class="download__links">
+            <a class="download__link  download__link--apple" href="#">Apple</a>
+            <a class="download__link  download__link--android" href="#">Android</a>
+            <a class="download__link  download__link--windows" href="#">Windows</a>
+          </div>
+          <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </section>
+      </div>
+    </header>
+    </div>
+    <section class="advantages">
+      <div class="advantages__wrapper">
+        <h2 class="advantages__slogan">
+          <span class="advatages__slogan-text">Устали от серости мегаполиса?</span>
+          <span class="advatages__slogan-text">Нам есть, что вам предложить!</span>
+        </h2>
+        <div class="advantages__items">
+        	<div class="advantages__item">
+        	  <h3 class="advantages__item-title">Поднимает настроение</h3>
+        	  <p class="advantages__item-text">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
+        	</div>
+        	<div class="advantages__item">
+        	  <h3 class="advantages__item-title">Меняет мир вокруг</h3>
+        	  <p class="advantages__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        	</div>
+        	<div class="advantages__item">
+        	  <h3 class="advantages__item-title">Заводит новых друзей</h3>
+        	  <p class="advantages__item-text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых друзей</p>
+        	</div>
+        </div>
+      </div>
+    </section>
+    <section class="review">
+      <div class="review__wrapper">
+        <div class="review__items">
+          <input class="slider-nav__swither" type="radio" name="review" id="review-radio-1" checked>
+          <input class="slider-nav__swither" type="radio" name="review" id="review-radio-2">
+          <input class="slider-nav__swither" type="radio" name="review" id="review-radio-3">
+          <div class="review__control">
+            <label for="review-radio-1"></label>
+            <label for="review-radio-2"></label>
+            <label for="review-radio-3"></label>
+          </div>
+          <blockquote class="review__item  review__item--active">
+            <cite class="reviews__auhor-name">Николай Петров</cite>
+            <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </blockquote>
+          <blockquote class="review__item">
+            <cite class="reviews__auhor-name">Николай Петров</cite>
+            <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </blockquote>
+          <blockquote class="review__item">
+            <cite class="reviews__auhor-name">Николай Петров</cite>
+            <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+    <section class="prices">
+      <div class="prices__wrapper">
+        <div class="prices__items">
+          <input class="slider-nav__swither" type="radio" name="price" id="price-radio-1">
+          <input class="slider-nav__swither" type="radio" name="price" id="price-radio-2" checked>
+          <input class="slider-nav__swither" type="radio" name="price" id="price-radio-3">
+          <div class="price__control">
+            <label for="price-radio-1"></label>
+            <label for="price-radio-2"></label>
+            <label for="price-radio-3"></label>
+          </div>
+          <table class="prices__table">
+            <tr>
+              <th class="table-header"><span class="table-header  table-header--bold">база</span>1,99 usd</th>
+              <th class="table-header" data-title="ХИТ"><span class="table-header  table-header--hit">хит</span><span class="table-header  table-header--bold">стандарт</span>3,99 usd</th>
+              <th class="table-header"><span class="table-header  table-header--bold">анлим</span>9,99 usd</th>
+            </tr>
+            <tr>
+              <td class="table-item">розовый фильтр<span class="table-item  table-item--included">да</span></td>
+              <td class="table-item">розовый фильтр<span class="table-item  table-item--included">да</span></td>
+              <td class="table-item">розовый фильтр<span class="table-item  table-item--included">да</span></td>
+            </tr>
+            <tr>
+              <td class="table-item">смайлики <span class="table-item  table-item--not-included">нет</span></td>
+              <td class="table-item">смайлики <span class="table-item  table-item--included">да</span></td>
+              <td class="table-item">смайлики <span class="table-item  table-item--included">да</span></td>
+            </tr>
+            <tr>
+              <td class="table-item">комментарии <span class="table-item  table-item--not-included">нет</span></td>
+              <td class="table-item">комментарии <span class="table-item  table-item--not-included">нет</span></td>
+              <td class="table-item">комментарии <span class="table-item  table-item--included">да</span></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="contacts">
+          <h2 class="contacts__slogan"> Остались вопросы? Свяжитесь с нами!</h2>
+          <div class="contacts__item">
+            <b class="contacts__item-info">Звоните:</b>
+            <a class="contacts__text" href="tel:+7(812)555-66-66">+7 (812) 555-66-66</a>
+          </div>
+          <div class="contacts__item">
+            <b class="contacts__item-info">Пишите:</b>
+            <a class="contacts__text" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </div>
+          <div class="contacts__item">
+            <b class="contacts__item-info">Приезжайте в гости:</b>
+            <span class="contacts__text">ул. Большая Конюшенная, 19/8</span>
+          </div>
+        </div>
+      </div>
+      <div class="page-footer__map"></div>
+    </footer>
   </body>
 </html>

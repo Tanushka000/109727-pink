@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+	  <meta charset="UTF-8">
+	  <title>Pink | Photo</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo" href="index.html">Pink</a>
+      <nav class="main-nav">
+        <span class="main-nav__toggle  main-nav__toggle--closed">Открыть меню</span>
+        <div class="main-nav__wrapper  main-nav__wrapper--closed">
+          <ul class="main-nav__items">
+            <li class="main-nav__item"><a href="index.html">Главная</a></li>
+            <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+            <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+            <li class="main-nav__item"><a href="https://htmlacademy.ru">Html Academy</a></li>
+          </ul>
+        </div>
+      </nav>
+      <h1 class="page-header__title">Фотографии пользователей</h1>
+    </header>
+    <section class="photo-content">
+      <div class="photo-content__wrapper">
+        <h2 class="photo-content__slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
+        <div class="photos">
+          <div class="photo photo--panorama">
+            <a class="photo__link" href="#"><img src="#" width="320" height="137" alt="панорама дня"></a>
+            <b class="photo__name">Панорама дня</b>
+            <div class="photo__description">
+              <p class="photo__auhor-name"><span>Анна</span>(5 минут назад)</p>
+              <p>Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
+              <a href="#" class="like">НРАВИТСЯ: <span>215</span></a>
+            </div>
+          </div>
+          <div class="photo">
+            <a class="photo__link" href="#"><img src="#" width="280" height="180" alt="машина"></a>
+            <div class="photo__description">
+              <p class="photo__auhor-name"><span>Левон</span>(5 часов назад)</p>
+              <p>Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <a href="#" class="like">НРАВИТСЯ: <span>356</span></a>
+            </div>
+          </div>
+          <div class="photo">
+            <a class="photo__link" href="#"><img src="#" width="280" height="180" alt="барабаны"></a>
+            <div class="photo__description">
+              <p class="photo__auhor-name"><span>Антон</span>(12 часов назад)</p>
+              <p>Соседи будут рады!</p>
+              <a href="#" class="like">НРАВИТСЯ: <span>666</span></a>
+            </div>
+          </div>
+          <div class="photo">
+            <a class="photo__link" href="#"><img src="#" width="280" height="180" alt="окна"></a>
+            <div class="photo__description">
+              <p class="photo__auhor-name"><span>Борис</span>(20 часов назад)</p>
+              <p>Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <a href="#" class="like">НРАВИТСЯ: <span>215</span></a>
+            </div>
+          </div>
+          <div class="photo">
+            <a class="photo__link" href="#"><img src="#" width="280" height="180" alt="кубанская бахча"></a>
+            <div class="photo__description">
+              <p class="photo__auhor-name"><span>Сергей</span>(25 часов назад)</p>
+              <p>Самая кубанская в мире!</p>
+              <a href="#" class="like">НРАВИТСЯ: <span>4</span></a>
+            </div>
+          </div>
+          <div class="photo">
+            <a class="photo__link" href="#"><img src="#" width="280" height="180" alt="нет снега"></a>
+            <div class="photo__description">
+              <cite class="photo__auhor-name"><span>Максим</span>(40 часов назад)</cite>
+              <p>Где снег-то?</p>
+              <a href="#" class="like">НРАВИТСЯ: <span>150</span></a>
+            </div>
+          </div>
+          <div class="photo">
+            <a class="photo__link" href="#"><img src="#" width="280" height="180" alt="вид с самолета"></a>
+            <div class="photo__description">
+              <cite class="photo__auhor-name"><span>Надежда</span>(45 часов назад)</cite>
+              <p>Всем GM и взаимные лайки!</p>
+              <a href="#" class="like">НРАВИТСЯ: <span>2560</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="edit">
+      <div class="edit__wrapper">
+        <h2 class="edit__slogan">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
+        <form class="form" action="#">
+          <div class="form__photo">
+            <img src="#" width="280" height="374" alt="ваше фото">
+          </div>
+          <div class="form__controls">
+            <a href="#" class="form__controls-link  form__controls-link--clip">обрезать</a>
+            <a href="#" class="form__controls-link  form__controls-link--fill">залить</a>
+            <a href="#" class="form__controls-link  form__controls-link--contrast">контраст</a>
+            <input type="range" class="photo__controls-range">
+          </div>
+          <button class="btn" type="submit">Запостить</button>
+          <button class="btn btn--cancel" type="reset">Отмена</button>
+        </div>
+      </form>
+    </section>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo">
+          <img src="#" width="147" height="40" alt="pink-logo">
+        </div>
+        <div class="social-links">
+          <a class="social-links__link social-links__link--tweeter" href="#">Tweeter</a>
+          <a class="social-links__link social-links__link--facebook" href="#">Facebook</a>
+          <a class="social-links__link social-links__link--vimeo" href="#">Vimeo</a>
+        </div>
+        <div class="page-footer__developer">
+          <span>разработано</span>
+          <a class="page-footer__developer-link" href="https://htmlacademy.ru">Html academy</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
