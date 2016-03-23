@@ -1,0 +1,46 @@
+.page-header {
+  position: relative;
+  min-height: 240px;
+  .outline ();
+  background: url("../../img/bg-back-mobile.jpg") no-repeat;
+  background-size: cover;
+  &__title {
+    .contacts-text();
+    width: 240px;
+    padding-top: 100px;
+    padding-bottom: 52px;
+    margin: 0 auto;
+    font-weight: normal;
+    text-align: center;
+    color: @light-grey;
+  }
+}
+
+@media @tablet-widths {
+  .page-header{
+    min-height: 440px;
+    &__title {
+      .desktop-slogan ();
+      width: 500px;
+      margin: 0 auto;
+      padding-top: 190px;
+      padding-bottom: 150px;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .page-header {
+    min height: 396px;
+    &__wrapper {
+      // margin: 0 auto;
+      .container;
+      .clearfix;
+    }
+    &__title {
+      width: 820px;
+      padding-top: 185px;
+      padding-bottom: 110px;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.form {
+  &__part--grey {
+    background-color: @grey;
+  }
+  &__text {
+    .font-size ();
+    display: block;
+    text-align: center;
+    color: @pink;
+    padding: 40px 0;
+  }
+  &__note {
+    display: block;
+  }
+}
+
+@media @tablet-widths {
+  .form {
+    &__part {
+      border: 2px solid @grey;
+      margin-top: 40px;
+      padding-bottom: 40px;
+    }
+    &__part--grey {
+      background: @white;
+    }
+    &__part--author {
+      border: none;
+    }
+    &__text {
+      width: 430px;
+      margin: -17px auto 0;
+      padding: 0;
+      padding-bottom: 45px;
+      background: @white;
+    }
+  }
+}

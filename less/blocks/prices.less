@@ -1,0 +1,30 @@
+.prices {
+  min-height: 470px;
+  .outline();
+  &__table {
+    margin: 0 auto;
+    .outline ();
+  }
+}
+
+@media @tablet-widths {
+  .prices {
+    min-height: 380px;
+    &__wrapper {
+      .container ();
+      .clearfix ();
+    }
+    &__table {
+      padding-top: 90px;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .prices {
+    min-height: 530px;
+    &__table {
+      padding-top: 150px;
+    }
+  }
+}

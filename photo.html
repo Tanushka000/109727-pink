@@ -3,6 +3,7 @@
   <head>
 	  <meta charset="UTF-8">
 	  <title>Pink | Photo</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -12,7 +13,7 @@
         <div class="main-nav__wrapper  main-nav__wrapper--closed">
           <ul class="main-nav__items">
             <li class="main-nav__item"><a href="index.html">Главная</a></li>
-            <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+            <li class="main-nav__item  main-nav__item--active  main-nav__item--active-shown"><a href="photo.html">Фотографии</a></li>
             <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
             <li class="main-nav__item"><a href="https://htmlacademy.ru">Html Academy</a></li>
           </ul>
@@ -24,8 +25,8 @@
       <div class="photo-content__wrapper">
         <h2 class="photo-content__slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
         <div class="photos">
-          <div class="photo photo--panorama">
-            <a class="photo__link" href="#"><img src="#" width="320" height="137" alt="панорама дня"></a>
+          <div class="photo  photo--panorama">
+            <a class="photo__link  photo__link--panorama" href="#"><img src="img/panorama-mobile.jpg" width="320" height="137" alt="панорама дня"></a>
             <b class="photo__name">Панорама дня</b>
             <div class="photo__description">
               <p class="photo__auhor-name"><span>Анна</span>(5 минут назад)</p>
@@ -34,7 +35,7 @@
             </div>
           </div>
           <div class="photo">
-            <a class="photo__link" href="#"><img src="#" width="280" height="180" alt="машина"></a>
+            <a class="photo__link" href="#"><img src="img/photo-1-mobile.jpg" width="280" height="180" alt="машина"></a>
             <div class="photo__description">
               <p class="photo__auhor-name"><span>Левон</span>(5 часов назад)</p>
               <p>Вчера он на луну летал, сегодня в руки к нам попал.</p>
@@ -42,7 +43,7 @@
             </div>
           </div>
           <div class="photo">
-            <a class="photo__link" href="#"><img src="#" width="280" height="180" alt="барабаны"></a>
+            <a class="photo__link" href="#"><img src="img/photo-2-mobile.jpg" width="280" height="180" alt="барабаны"></a>
             <div class="photo__description">
               <p class="photo__auhor-name"><span>Антон</span>(12 часов назад)</p>
               <p>Соседи будут рады!</p>
@@ -50,7 +51,7 @@
             </div>
           </div>
           <div class="photo">
-            <a class="photo__link" href="#"><img src="#" width="280" height="180" alt="окна"></a>
+            <a class="photo__link" href="#"><img src="img/photo-3-mobile.jpg" width="280" height="180" alt="окна"></a>
             <div class="photo__description">
               <p class="photo__auhor-name"><span>Борис</span>(20 часов назад)</p>
               <p>Здесь могла быть ваша цитата о высоком и вечном.</p>
@@ -58,7 +59,7 @@
             </div>
           </div>
           <div class="photo">
-            <a class="photo__link" href="#"><img src="#" width="280" height="180" alt="кубанская бахча"></a>
+            <a class="photo__link" href="#"><img src="img/photo-4-mobile.jpg" width="280" height="180" alt="кубанская бахча"></a>
             <div class="photo__description">
               <p class="photo__auhor-name"><span>Сергей</span>(25 часов назад)</p>
               <p>Самая кубанская в мире!</p>
@@ -66,17 +67,17 @@
             </div>
           </div>
           <div class="photo">
-            <a class="photo__link" href="#"><img src="#" width="280" height="180" alt="нет снега"></a>
+            <a class="photo__link" href="#"><img src="img/photo-5-mobile.jpg" width="280" height="180" alt="нет снега"></a>
             <div class="photo__description">
-              <cite class="photo__auhor-name"><span>Максим</span>(40 часов назад)</cite>
+              <p class="photo__auhor-name"><span>Максим</span>(40 часов назад)</p>
               <p>Где снег-то?</p>
               <a href="#" class="like">НРАВИТСЯ: <span>150</span></a>
             </div>
           </div>
           <div class="photo">
-            <a class="photo__link" href="#"><img src="#" width="280" height="180" alt="вид с самолета"></a>
+            <a class="photo__link" href="#"><img src="img/photo-6-mobile.jpg" width="280" height="180" alt="вид с самолета"></a>
             <div class="photo__description">
-              <cite class="photo__auhor-name"><span>Надежда</span>(45 часов назад)</cite>
+              <p class="photo__auhor-name"><span>Надежда</span>(45 часов назад)</p>
               <p>Всем GM и взаимные лайки!</p>
               <a href="#" class="like">НРАВИТСЯ: <span>2560</span></a>
             </div>
@@ -85,11 +86,11 @@
       </div>
     </section>
     <section class="edit">
+      <h2 class="edit__slogan"><span>Затмите их всех!</span> Выкладывайте все, что накопилось в телефоне!</h2>
       <div class="edit__wrapper">
-        <h2 class="edit__slogan">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
         <form class="form" action="#">
           <div class="form__photo">
-            <img src="#" width="280" height="374" alt="ваше фото">
+            <img src="img/photo-7-mobile.jpg" width="280" height="374" alt="ваше фото">
           </div>
           <div class="form__controls">
             <a href="#" class="form__controls-link  form__controls-link--clip">обрезать</a>
@@ -104,17 +105,23 @@
     </section>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="page-footer__logo">
-          <img src="#" width="147" height="40" alt="pink-logo">
+        <div class="page-footer__item">
+          <div class="page-footer__logo">
+            <img src="#" width="147" height="40" alt="pink-logo">
+          </div>
         </div>
-        <div class="social-links">
-          <a class="social-links__link social-links__link--tweeter" href="#">Tweeter</a>
-          <a class="social-links__link social-links__link--facebook" href="#">Facebook</a>
-          <a class="social-links__link social-links__link--vimeo" href="#">Vimeo</a>
+        <div class="page-footer__item">
+          <div class="social-links">
+            <a class="social-links__link social-links__link--twitter" href="#">Twitter</a>
+            <a class="social-links__link social-links__link--facebook" href="#">Facebook</a>
+            <a class="social-links__link social-links__link--youtube" href="#">youtube</a>
+          </div>
         </div>
-        <div class="page-footer__developer">
-          <span>разработано</span>
-          <a class="page-footer__developer-link" href="https://htmlacademy.ru">Html academy</a>
+        <div class="page-footer__item">
+          <div class="page-footer__developer">
+            <span>разработано</span>
+            <a class="page-footer__developer-link" href="https://htmlacademy.ru">Html academy</a>
+          </div>
         </div>
       </div>
     </footer>

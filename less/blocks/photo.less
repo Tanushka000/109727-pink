@@ -1,0 +1,47 @@
+.photo {
+  .text();
+  color: @blue;
+  margin-bottom: 20px;
+  background: @grey;
+  &__description {
+    padding-left: 18px;
+    text-align: left;
+  }
+  &__auhor-name {
+    span {
+      font-weight: bold;
+    }
+  }
+}
+
+@media @tablet-widths {
+  .photo {
+    float: left;
+    width: 300px;
+    min-height: 455px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    &:nth-child(2n+1) {
+      margin-right: 0px;
+    }
+    &--panorama {
+      width: 620px;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .photo {
+    min-height: 600px;
+    margin-bottom: 60px;
+    &:nth-child(2n+1) {
+      margin-right: 20px;
+    }
+    &:nth-child(3n+4) {
+      margin-right: 0px;
+    }
+    &--panorama {
+      width: 940px;
+    }
+  }
+}

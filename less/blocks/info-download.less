@@ -1,0 +1,34 @@
+.info-download {
+  padding-top: 486px;
+  &__slogan {
+    display: none;
+  }
+}
+
+@media @tablet-widths {
+  .info-download {
+    padding-top: 210px;
+    float: left;
+    width: 300px;
+    &__slogan {
+      display: block;
+      font-weight: 100;
+      width: 210px;
+      margin: 0 auto;
+      padding-bottom: 40px;
+      text-align: center;
+      .tablet-slogan();
+      color: @white;
+      font-weight: normal;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .info-download {
+     &__slogan {
+      .desktop-slogan ();
+      width: 270px;
+     }
+  }
+}

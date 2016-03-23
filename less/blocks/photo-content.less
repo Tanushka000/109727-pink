@@ -1,0 +1,40 @@
+.photo-content {
+  min-height: 2300px;
+  padding: 0 20px;
+  .outline ();
+  &__slogan {
+    .slogan ();
+    font-weight: normal;
+    text-align: center;
+    margin: 0 auto;
+    padding: 50px 0;
+  }
+}
+
+@media @tablet-widths {
+  .photo-content {
+    min-height: 2315px;
+    &__wrapper {
+      .outline();
+      .container ();
+      .clearfix ();
+    }
+    &__slogan {
+      .font-size ();
+      width: 500px;
+      padding-top: 100px;
+      padding-bottom: 80px;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .photo-content {
+    min-height: 2055px;
+    &__slogan {
+      width: 590px;
+      padding-top: 100px;
+      padding-bottom: 95px;
+    }
+  }
+}

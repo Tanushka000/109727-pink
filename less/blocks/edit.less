@@ -1,0 +1,28 @@
+.edit {
+  background: @grey;
+  min-height: 760px;
+  &__wrapper {
+    padding: 0 20px;
+  }
+  &__slogan {
+    .slogan ();
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 0;
+    color: @blue;
+    background: @white;
+    span {
+      display: block;
+    }
+  }
+}
+
+@media @tablet-widths {
+  .edit {
+    min-height: 710px;
+    &__wrapper {
+      .container;
+      .clearfix;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.reply {
+  min-height: 2270px;
+  padding: 0 20px;
+  &__slogan {
+    .slogan ();
+    font-weight: normal;
+    text-align: center;
+    margin: 0 auto;
+    padding: 50px 0;
+    span {
+      display: none;
+    }
+  }
+}
+
+@media @tablet-widths {
+  .reply {
+  min-height: 2440px;
+  &__wrapper {
+    .container ();
+    .clearfix ();
+  }
+  &__slogan {
+    .font-size ();
+    width: 500px;
+    padding-top: 100px;
+    padding-bottom: 70px;
+    span {
+      display: block;
+      }
+    }
+  }
+}
+
+@media @desktop-widths {
+  .reply {
+    min-height: 1500px;
+    &__slogan {
+      width: 765px;
+      padding-top: 100px;
+      padding-bottom: 80px;
+      span {
+        display: inline-block;
+        vertical-align: inherit;
+      }
+    }
+  }
+}
