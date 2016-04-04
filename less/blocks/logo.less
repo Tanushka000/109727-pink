@@ -1,0 +1,37 @@
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  &--mobile {
+    width: 75px;
+    height: 24px;
+    padding: 20px;
+    @media @tablet-widths {
+      display: none;
+    }
+  }
+  &--tablet {
+    display: none;
+    @media @tablet-widths {
+       display: block;
+      width: 147px;
+      height: 40px;
+      padding: 25px 40px;
+    }
+    @media @desktop-widths {
+        display: none;
+    }
+  }
+  &--desktop {
+    display: none;
+    @media @desktop-widths {
+      display: block;
+      position: inherit;
+      float: left;
+      width: 147px;
+      height: 40px;
+      padding: 25px 40px;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.checkbox {
+  display: block;
+  @media @tablet-widths {
+    padding-left: 60px;
+  }
+  @media @desktop-widths {
+    display: inline-block;
+  }
+  &__input {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 37px;
+    height: 37px;
+  }
+  &__name {
+    font-size: 18px;
+    line-height: 1.875em;
+    padding-left: 30px;
+    color: @blue;
+  }
+}

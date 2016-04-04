@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.875em;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  background-color: white;
+}
+.clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+  @media @tablet-widths {
+    width: 620px;
+  }
+  @media @desktop-widths {
+    width: 940px;
+  }
+}
+

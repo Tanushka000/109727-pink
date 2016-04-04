@@ -1,0 +1,38 @@
+.controls {
+  border-bottom: 1px solid #dddfe0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  @media @tablet-widths {
+    width: 300px;
+  }
+  &__range {
+    display: none;
+    @media @tablet-widths {
+      display: block;
+    }
+  }
+  &__item {
+    width: 50px;
+    margin: 30px 0;
+    @media @tablet-widths {
+      width: 280px;
+    }
+  }
+  &__link {
+    display: inline-block;
+    vertical-align: top;
+    width: 55px;
+    height: 55px;
+    font-size: 0;
+    &--clip {
+      background: url("../../img/icon-editor-crop.svg") no-repeat;
+    }
+    &--fill {
+      background: url("../../img/icon-editor-fill.svg") no-repeat;
+    }
+    &--contrast {
+      background: url("../../img/icon-editor-contrast.svg") no-repeat;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.photo {
+  font-size: 14px;
+  line-height: 1.875em;
+  color: @blue;
+  margin-bottom: 20px;
+  background: @grey;
+  @media @tablet-widths {
+    width: 300px;
+    min-height: 455px;
+    margin-bottom: 20px;
+  }
+  @media @desktop-widths {
+    min-height: 600px;
+    margin-bottom: 60px;
+  }
+  &--panorama {
+    position: relative;
+    @media @tablet-widths {
+      width: 632px;
+    }
+    @media @desktop-widths {
+      width: 940px;
+    }
+  }
+  &__description {
+    padding-left: 18px;
+    text-align: left;
+  }
+  &__auhor-name {
+    margin: 0;
+    font-weight: bold;
+  }
+  &__text {
+    margin: 0;
+  }
+  &__link {
+    &--panorama {
+    }
+  }
+  &__name {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 140px;
+    height: 30px;
+    background: @pink;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}

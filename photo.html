@@ -3,81 +3,87 @@
   <head>
 	  <meta charset="UTF-8">
 	  <title>Pink | Photo</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">Pink</a>
-      <nav class="main-nav">
-        <span class="main-nav__toggle  main-nav__toggle--closed">Открыть меню</span>
-        <div class="main-nav__wrapper  main-nav__wrapper--closed">
-          <ul class="main-nav__items">
-            <li class="main-nav__item"><a href="index.html">Главная</a></li>
-            <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
-            <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-            <li class="main-nav__item"><a href="https://htmlacademy.ru">Html Academy</a></li>
-          </ul>
-        </div>
-      </nav>
-      <h1 class="page-header__title">Фотографии пользователей</h1>
+      <div class="page-header__wrapper">
+        <a class="logo  logo--mobile" href="index.html"><img src="img/logo-pink-white-mobile.svg" alt="Pink"></a>
+        <a class="logo  logo--tablet" href="index.html"><img src="img/logo-pink-white-mobile.svg" alt="Pink"></a>
+        <a class="logo  logo--desktop" href="index.html"><img src="img/logo-pink-white-mobile.svg" alt="Pink"></a>
+        <nav class="main-nav">
+          <span class="main-nav__toggle  main-nav__toggle--closed">Открыть меню</span>
+          <div class="main-nav__wrapper  main-nav__wrapper--closed">
+            <ul class="main-nav__items">
+              <li class="main-nav__item  main-nav__item--active  main-nav__item--active-shown"><a href="index.html">Главная</a></li>
+              <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+              <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+              <li class="main-nav__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
+            </ul>
+          </div>
+        </nav>
+        <h1 class="page-header__title">Фотографии пользователей</h1>
+      </div>
     </header>
     <section class="photo-content">
       <div class="photo-content__wrapper">
         <h2 class="photo-content__slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
         <div class="photos">
-          <div class="photo photo--panorama">
-            <a class="photo__link" href="#"><img src="#" width="320" height="137" alt="панорама дня"></a>
+          <div class="photo  photo--panorama">
+            <a class="photo__link  photo__link--panorama" href="#"><img src="img/panorama-mobile.jpg" width="320" height="137" alt="панорама дня"></a>
             <b class="photo__name">Панорама дня</b>
             <div class="photo__description">
-              <p class="photo__auhor-name"><span>Анна</span>(5 минут назад)</p>
-              <p>Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
+              <p class="photo__auhor-name">Анна <span>(5 минут назад)</span></p>
+              <p class="photo__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
               <a href="#" class="like">НРАВИТСЯ: <span>215</span></a>
             </div>
           </div>
           <div class="photo">
-            <a class="photo__link" href="#"><img src="#" width="280" height="180" alt="машина"></a>
+            <a class="photo__link" href="#"><img src="img/photo-1-mobile.jpg" width="280" height="180" alt="машина"></a>
             <div class="photo__description">
-              <p class="photo__auhor-name"><span>Левон</span>(5 часов назад)</p>
-              <p>Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <p class="photo__auhor-name">Левон <span>(5 часов назад)</span></p>
+              <p class="photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
               <a href="#" class="like">НРАВИТСЯ: <span>356</span></a>
             </div>
           </div>
           <div class="photo">
-            <a class="photo__link" href="#"><img src="#" width="280" height="180" alt="барабаны"></a>
+            <a class="photo__link" href="#"><img src="img/photo-2-mobile.jpg" width="280" height="180" alt="барабаны"></a>
             <div class="photo__description">
-              <p class="photo__auhor-name"><span>Антон</span>(12 часов назад)</p>
-              <p>Соседи будут рады!</p>
+              <p class="photo__auhor-name">Антон <span>(12 часов назад)</span></p>
+              <p class="photo__text">Соседи будут рады!</p>
               <a href="#" class="like">НРАВИТСЯ: <span>666</span></a>
             </div>
           </div>
           <div class="photo">
-            <a class="photo__link" href="#"><img src="#" width="280" height="180" alt="окна"></a>
+            <a class="photo__link" href="#"><img src="img/photo-3-mobile.jpg" width="280" height="180" alt="окна"></a>
             <div class="photo__description">
-              <p class="photo__auhor-name"><span>Борис</span>(20 часов назад)</p>
-              <p>Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <p class="photo__auhor-name">Борис <span>(20 часов назад)</span></p>
+              <p class="photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
               <a href="#" class="like">НРАВИТСЯ: <span>215</span></a>
             </div>
           </div>
           <div class="photo">
-            <a class="photo__link" href="#"><img src="#" width="280" height="180" alt="кубанская бахча"></a>
+            <a class="photo__link" href="#"><img src="img/photo-4-mobile.jpg" width="280" height="180" alt="кубанская бахча"></a>
             <div class="photo__description">
-              <p class="photo__auhor-name"><span>Сергей</span>(25 часов назад)</p>
-              <p>Самая кубанская в мире!</p>
+              <p class="photo__auhor-name">Сергей <span>(25 часов назад)</span></p>
+              <p class="photo__text">Самая кубанская в мире!</p>
               <a href="#" class="like">НРАВИТСЯ: <span>4</span></a>
             </div>
           </div>
           <div class="photo">
-            <a class="photo__link" href="#"><img src="#" width="280" height="180" alt="нет снега"></a>
+            <a class="photo__link" href="#"><img src="img/photo-5-mobile.jpg" width="280" height="180" alt="нет снега"></a>
             <div class="photo__description">
-              <cite class="photo__auhor-name"><span>Максим</span>(40 часов назад)</cite>
-              <p>Где снег-то?</p>
+              <p class="photo__auhor-name">Максим <span>(40 часов назад)</span></p>
+              <p class="photo__text">Где снег-то?</p>
               <a href="#" class="like">НРАВИТСЯ: <span>150</span></a>
             </div>
           </div>
           <div class="photo">
-            <a class="photo__link" href="#"><img src="#" width="280" height="180" alt="вид с самолета"></a>
+            <a class="photo__link" href="#"><img src="img/photo-6-mobile.jpg" width="280" height="180" alt="вид с самолета"></a>
             <div class="photo__description">
-              <cite class="photo__auhor-name"><span>Надежда</span>(45 часов назад)</cite>
-              <p>Всем GM и взаимные лайки!</p>
+              <p class="photo__auhor-name">Надежда <span>(45 часов назад)</span></p>
+              <p class="photo__text">Всем GM и взаимные лайки!</p>
               <a href="#" class="like">НРАВИТСЯ: <span>2560</span></a>
             </div>
           </div>
@@ -85,36 +91,53 @@
       </div>
     </section>
     <section class="edit">
+      <h2 class="edit__slogan"><span>Затмите их всех!</span> Выкладывайте все, что накопилось в телефоне!</h2>
       <div class="edit__wrapper">
-        <h2 class="edit__slogan">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
-        <form class="form" action="#">
-          <div class="form__photo">
-            <img src="#" width="280" height="374" alt="ваше фото">
+        <form class="edit-form" action="#">
+          <div class="edit-form__content">
+            <div class="edit-form__photo">
+              <img src="img/photo-7-mobile.jpg" width="280" height="374" alt="ваше фото">
+           </div>
+            <div class="controls">
+              <div class="controls__item">
+                <a href="#" class="controls__link  controls__link--clip">обрезать</a>
+                <input type="range" class="controls__range">
+              </div>
+              <div class="controls__item">
+                <a href="#" class="controls__link  controls__link--fill">залить</a>
+                <input type="range" class="controls__range">
+              </div>
+              <div class="controls__item">
+                <a href="#" class="controls__link  controls__link--contrast">контраст</a>
+               <input type="range" class="controls__range">
+              </div>
+              <input type="range" class="edit__controls-range">
+            </div>
           </div>
-          <div class="form__controls">
-            <a href="#" class="form__controls-link  form__controls-link--clip">обрезать</a>
-            <a href="#" class="form__controls-link  form__controls-link--fill">залить</a>
-            <a href="#" class="form__controls-link  form__controls-link--contrast">контраст</a>
-            <input type="range" class="photo__controls-range">
-          </div>
-          <button class="btn" type="submit">Запостить</button>
-          <button class="btn btn--cancel" type="reset">Отмена</button>
-        </div>
-      </form>
+          <button class="btn  btn--post" type="submit">Запостить</button>
+          <button class="btn  btn--cancel" type="reset">Отмена</button>
+        </form>
+      </div>
     </section>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="page-footer__logo">
-          <img src="#" width="147" height="40" alt="pink-logo">
+        <div class="page-footer__item">
+          <div class="page-footer__logo">
+            <img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="pink-logo">
+          </div>
         </div>
-        <div class="social-links">
-          <a class="social-links__link social-links__link--tweeter" href="#">Tweeter</a>
-          <a class="social-links__link social-links__link--facebook" href="#">Facebook</a>
-          <a class="social-links__link social-links__link--vimeo" href="#">Vimeo</a>
+        <div class="page-footer__item">
+          <div class="social-links">
+            <a class="social-links__link social-links__link--twitter" href="#">Twitter</a>
+            <a class="social-links__link social-links__link--facebook" href="#">Facebook</a>
+            <a class="social-links__link social-links__link--youtube" href="#">youtube</a>
+          </div>
         </div>
-        <div class="page-footer__developer">
-          <span>разработано</span>
-          <a class="page-footer__developer-link" href="https://htmlacademy.ru">Html academy</a>
+        <div class="page-footer__item">
+          <div class="page-footer__developer">
+            <span>разработано</span>
+            <a class="page-footer__developer-link" href="https://htmlacademy.ru">Html academy</a>
+          </div>
         </div>
       </div>
     </footer>

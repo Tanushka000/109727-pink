@@ -1,0 +1,27 @@
+.photo-content {
+  padding: 0 20px;
+  &__slogan {
+    font-size: 14px;
+    line-height: 1.875em;
+    font-weight: normal;
+    text-align: center;
+    margin: 0 auto;
+    padding: 50px 0;
+    @media @tablet-widths {
+      font-size: 18px;
+      line-height: 1.875em;
+      width: 500px;
+      padding-top: 100px;
+      padding-bottom: 80px;
+    }
+    @media @desktop-widths {
+      width: 590px;
+      padding-top: 100px;
+      padding-bottom: 95px;
+    }
+  }
+  &__wrapper {
+    .container();
+  }
+}
+
