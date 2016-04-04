@@ -3,13 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Pink</title>
-<!--     <link rel="stylesheet" type="text/css" href="css/normalize.css"> -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   </head>
   <body>
     <header class="index-header">
       <div class="index-header__wrapper">
-        <a class="index-header__logo" href="index.html"><span>Pink</span></a>
+        <a class="logo  logo--mobile" href="index.html"><img src="img/logo-pink-white-mobile.svg" alt="Pink"></a>
+        <a class="logo  logo--tablet" href="index.html"><img src="img/logo-pink-white-mobile.svg" alt="Pink"></a>
+        <a class="logo  logo--desktop" href="index.html"><img src="img/logo-pink-white-mobile.svg" alt="Pink"></a>
         <nav class="main-nav">
           <span class="main-nav__toggle  main-nav__toggle--closed">Открыть меню</span>
           <div class="main-nav__wrapper  main-nav__wrapper--closed">
@@ -26,9 +28,9 @@
     	    <section class="download">
             <a class="btn  btn--round" href="#">Скачать приложение</a>
             <div class="download__links">
-              <a class="download__link  download__link--apple" href="#"><span>Apple</span></a>
-              <a class="download__link  download__link--android" href="#"><span>Android</span></a>
-              <a class="download__link  download__link--windows" href="#"><span>Windows</span></a>
+              <a class="download__link  download__link--apple" href="#">Apple</a>
+              <a class="download__link  download__link--android" href="#">Android</a>
+              <a class="download__link  download__link--windows" href="#">Windows</a>
             </div>
             <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
           </section>
@@ -38,8 +40,8 @@
     <section class="advantages">
       <div class="advantages__wrapper">
         <h2 class="advantages__slogan">
-          <span class="advatages__slogan-text">Устали от серости мегаполиса?</span>
-          <span class="advatages__slogan-text">Нам есть, что вам предложить!</span>
+          <span class="advantages__slogan-text">Устали от серости мегаполиса?</span>
+          <span class="advantages__slogan-text">Нам есть, что вам предложить!</span>
         </h2>
         <div class="advantages__items">
         	<div class="advantages__item">
@@ -55,8 +57,8 @@
         	  <p class="advantages__item-text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых друзей</p>
         	</div>
           <div class="advantages__item  advantages__item--last">
-            <h3 class="advantages__item-title">Эффект на 24 часа!</h3>
-            <p class="advantages__item-text">Британские ученые провели исследованияи доказали, что положительный эффектот использования приложения длится целые сутки!</p>
+            <h3 class="advantages__item-title  advantages__item-title--last">Эффект на 24 часа!</h3>
+            <p class="advantages__item-text  advantages__item-text--last">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
             <a href="#">Узнать больше об исследовании</a>
           </div>
         </div>
@@ -66,68 +68,72 @@
       <div class="review__wrapper">
         <div class="review__items">
           <div class="slider">
-            <input class="slider-nav__swither" type="radio" name="review" id="review-radio-1" checked>
-            <input class="slider-nav__swither" type="radio" name="review" id="review-radio-2">
-            <input class="slider-nav__swither" type="radio" name="review" id="review-radio-3">
-            <div class="review__control">
-              <label for="review-radio-1"></label>
-              <label for="review-radio-2"></label>
-              <label for="review-radio-3"></label>
+            <input class="slider__input" type="radio" name="review" id="review-radio-1" checked>
+            <input class="slider__input" type="radio" name="review" id="review-radio-2">
+            <input class="slider__input" type="radio" name="review" id="review-radio-3">
+            <div class="slider__control">
+              <label class="slider__label" for="review-radio-1"></label>
+              <label class="slider__label" for="review-radio-2"></label>
+              <label class="slider__label" for="review-radio-3"></label>
             </div>
+            <blockquote class="review__item  review__item--active">
+              <cite class="review__author-name">Николай Петров</cite>
+              <p class="review__item-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              <span class="review__author-info">25 лет, водитель трамвая</span>
+            </blockquote>
+            <blockquote class="review__item">
+              <cite class="review__author-name">Николай Петров</cite>
+              <p class="review__item-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              <span class="review__author-info">25 лет, водитель трамвая</span>
+            </blockquote>
+            <blockquote class="review__item">
+              <cite class="review__author-name">Николай Петров</cite>
+              <p class="review__item-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              <span class="review__author-info">25 лет, водитель трамвая</span>
+            </blockquote>
           </div>
-          <blockquote class="review__item  review__item--active">
-            <cite class="review__author-name">Николай Петров</cite>
-            <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            <span class="review__author-info">25 лет, водитель трамвая</span>
-          </blockquote>
-          <blockquote class="review__item">
-            <cite class="review__author-name">Николай Петров</cite>
-            <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            <span class="review__author-info">25 лет, водитель трамвая</span>
-          </blockquote>
-          <blockquote class="review__item">
-            <cite class="review__author-name">Николай Петров</cite>
-            <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            <span class="review__author-info">25 лет, водитель трамвая</span>
-          </blockquote>
         </div>
       </div>
     </section>
     <section class="prices">
       <div class="prices__wrapper">
         <div class="prices__items">
-          <div class="slider">
-            <input class="slider-nav__swither" type="radio" name="price" id="price-radio-1">
-            <input class="slider-nav__swither" type="radio" name="price" id="price-radio-2" checked>
-            <input class="slider-nav__swither" type="radio" name="price" id="price-radio-3">
-            <div class="price__control">
-              <label for="price-radio-1"></label>
-              <label for="price-radio-2"></label>
-              <label for="price-radio-3"></label>
+          <div class="slider  slider--prices">
+            <input class="slider__input" type="radio" name="price" id="price-radio-1">
+            <input class="slider__input" type="radio" name="price" id="price-radio-2" checked>
+            <input class="slider__input" type="radio" name="price" id="price-radio-3">
+            <div class="slider__control">
+              <label class="slider__label" for="price-radio-1"></label>
+              <label class="slider__label" for="price-radio-2"></label>
+              <label class="slider__label" for="price-radio-3"></label>
             </div>
+            <table class="prices__table">
+              <tr class="header">
+                <th class="table-header  table-header--none"></th>
+                <th class="table-header"><span class="table-header  table-header--bold">база</span>1,99 usd</th>
+                <th class="table-header" data-title="ХИТ"><span class="hit">хит</span><span class="table-header  table-header--bold">стандарт</span>3,99 usd</th>
+                <th class="table-header"><span class="table-header  table-header--bold">анлим</span>9,99 usd</th>
+              </tr>
+              <tr>
+                <td class="have  have--none">Розовый фильтр</td>
+                <td class="have">Розовый фильтр<span class="have  have--included">да</span>  </td>
+                <td class="have">Розовый фильтр<span class="have  have--included">да</span></td>
+                <td class="have">Розовый фильтр<span class="have  have--included">да</span></td>
+              </tr>
+              <tr>
+                <td class="have  have--none">Смайлики</td>
+                <td class="have">Смайлики <span class="have  have--not-included">нет</span></td>
+                <td class="have">Смайлики <span class="have  have--included">да</span></td>
+                <td class="have">Смайлики <span class="have  have--included">да</span></td>
+              </tr>
+              <tr>
+                <td class="have  have--none">Комментарии</td>
+                <td class="have">Комментарии <span class="have  have--not-included">нет</span></td>
+                <td class="have">Комментарии <span class="have  have--not-included">нет</span></td>
+                <td class="have">Комментарии <span class="have  have--included">да</span></td>
+              </tr>
+            </table>
           </div>
-          <table class="prices__table">
-            <tr>
-              <th class="table-header"><span class="table-header  table-header--bold">база</span>1,99 usd</th>
-              <th class="table-header" data-title="ХИТ"><span class="table-header  table-header--hit">хит</span><span class="table-header  table-header--bold">стандарт</span>3,99 usd</th>
-              <th class="table-header"><span class="table-header  table-header--bold">анлим</span>9,99 usd</th>
-            </tr>
-            <tr>
-              <td class="table-item">розовый фильтр<span class="table-item  table-item--included">да</span></td>
-              <td class="table-item">розовый фильтр<span class="table-item  table-item--included">да</span></td>
-              <td class="table-item">розовый фильтр<span class="table-item  table-item--included">да</span></td>
-            </tr>
-            <tr>
-              <td class="table-item">смайлики <span class="table-item  table-item--not-included">нет</span></td>
-              <td class="table-item">смайлики <span class="table-item  table-item--included">да</span></td>
-              <td class="table-item">смайлики <span class="table-item  table-item--included">да</span></td>
-            </tr>
-            <tr>
-              <td class="table-item">комментарии <span class="table-item  table-item--not-included">нет</span></td>
-              <td class="table-item">комментарии <span class="table-item  table-item--not-included">нет</span></td>
-              <td class="table-item">комментарии <span class="table-item  table-item--included">да</span></td>
-            </tr>
-          </table>
         </div>
       </div>
     </section>
@@ -135,17 +141,19 @@
       <div class="page-footer__wrapper">
         <div class="contacts">
           <h2 class="contacts__slogan"> Остались вопросы? Свяжитесь с нами!</h2>
-          <div class="contacts__item">
-            <b class="contacts__item-info">Звоните:</b>
-            <a class="contacts__text" href="tel:+7(812)555-66-66">+7 (812) 555-66-66</a>
-          </div>
-          <div class="contacts__item">
-            <b class="contacts__item-info">Пишите:</b>
-            <a class="contacts__text" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </div>
-          <div class="contacts__item  contacts__item--street">
-            <b class="contacts__item-info">Приезжайте в гости:</b>
-            <span class="contacts__text">ул. Большая Конюшенная, 19/8</span>
+          <div class="contacts__items">
+            <div class="contacts__item  contacts__item--phone">
+              <b class="contacts__item-info">Звоните:</b>
+              <a class="contacts__text" href="tel:+7(812)555-66-66">+7 (812) 555-66-66</a>
+            </div>
+            <div class="contacts__item">
+              <b class="contacts__item-info">Пишите:</b>
+              <a class="contacts__text" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </div>
+            <div class="contacts__item  contacts__item--street">
+              <b class="contacts__item-info">Приезжайте в гости:</b>
+              <span class="contacts__text">ул. Большая Конюшенная, 19/8</span>
+            </div>
           </div>
         </div>
       </div>
@@ -154,19 +162,19 @@
         <div class="page-footer__wrapper">
           <div class="page-footer__item  page-footer__item--index">
             <div class="page-footer__logo">
-              <img src="#" width="147" height="40" alt="pink-logo">
+              <img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="pink-logo">
             </div>
           </div>
           <div class="page-footer__item  page-footer__item--index">
             <div class="social-links">
-              <a class="social-links__link social-links__link--twitter" href="#"><span>Twitter</span></a>
+              <a class="social-links__link social-links__link--twitter" href="#">Twitter</a>
               <a class="social-links__link social-links__link--facebook" href="#">Facebook</a>
               <a class="social-links__link social-links__link--youtube" href="#">youtube</a>
             </div>
           </div>
           <div class="page-footer__item  page-footer__item--index">
             <div class="page-footer__developer">
-              <span>разработано</span>
+              <span>Разработано</span>
               <a class="page-footer__developer-link" href="https://htmlacademy.ru">Html academy</a>
             </div>
           </div>

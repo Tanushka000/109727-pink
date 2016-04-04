@@ -4,19 +4,22 @@
 	  <meta charset="UTF-8">
 	  <title>Pink | Конкурс</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   </head>
   <body>
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a class="page-header__logo" href="index.html">Pink</a>
+        <a class="logo  logo--mobile" href="index.html"><img src="img/logo-pink-white-mobile.svg" alt="Pink"></a>
+        <a class="logo  logo--tablet" href="index.html"><img src="img/logo-pink-white-mobile.svg" alt="Pink"></a>
+        <a class="logo  logo--desktop" href="index.html"><img src="img/logo-pink-white-mobile.svg" alt="Pink"></a>
         <nav class="main-nav">
           <span class="main-nav__toggle  main-nav__toggle--closed">Открыть меню</span>
           <div class="main-nav__wrapper  main-nav__wrapper--closed">
             <ul class="main-nav__items">
-              <li class="main-nav__item"><a href="index.html">Главная</a></li>
+              <li class="main-nav__item  main-nav__item--active  main-nav__item--active-shown"><a href="index.html">Главная</a></li>
               <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
-              <li class="main-nav__item  main-nav__item--active  main-nav__item--active-shown"><a href="form.html">Конкурс</a></li>
-              <li class="main-nav__item"><a href="https://htmlacademy.ru">Html Academy</a></li>
+              <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+              <li class="main-nav__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
             </ul>
           </div>
         </nav>
@@ -70,17 +73,18 @@
               <span class="checkbox__name">Разгромил отель</span>
             </label>
           </div>
-          <div class="form__part">
-            <label class="field-text">
+          <div class="form__part  form__part--contacts">
+            <span class="form__text  form__text--author-contacts">Контактная информация</span>
+            <label class="field-text  field-text--contacts">
               <span class="field-text__name">номер телефончика:</span>
               <input class="field-text__input" type="tel" placeholder="Номер, пожалуйста">
             </label>
-            <label class="field-text">
+            <label class="field-text  field-text--contacts">
               <span class="field-text__name">адресок почты:</span>
               <input class="field-text__input" type="email" placeholder="E-mail, пожалуйста">
             </label>
           </div>
-          <div class="form__part">
+          <div class="form__part  form__part--platforms">
             <span class="form__text">С каким приложением путешествовали?</span>
             <label class="radio">
               <input class="radio__input" type="radio" checked>
@@ -96,8 +100,8 @@
             </label>
           </div>
           <div class="form__part">
+            <span class="form__text">Опишите свои эмоции</span>
             <label class="field-text">
-              <span class="field-text__name  field-text__name--textarea">Опишите свои эмоции</span>
               <textarea class="field-text__textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </label>
           </div>
@@ -120,7 +124,7 @@
       <div class="page-footer__wrapper">
         <div class="page-footer__item">
           <div class="page-footer__logo">
-            <img src="#" width="147" height="40" alt="pink-logo">
+            <img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="pink-logo">
           </div>
         </div>
         <div class="page-footer__item">

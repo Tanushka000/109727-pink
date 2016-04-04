@@ -1,60 +1,87 @@
 .contacts {
+  position: relative;
+  margin: 0 auto;
   &__slogan {
     margin: 0 auto;
+    font-weight: 300;
     text-align: center;
     padding-top: 48px;
     padding-bottom: 40px;
     color: @blue;
+    @media @tablet-widths {
+      font-size: 40px;
+      line-height: 1.333em;
+      font-weight: normal;
+      width: 390px;
+      padding-top: 50px;
+      padding-bottom: 55px;
+    }
+    @media @desktop-widths {
+      font-size: 50px;
+      line-height: 1.667em;
+      width: 475px;
+      padding-bottom: 60px;
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 37px;
+    right: 0;
+    bottom: -37px;
+    z-index: 10;
+    background-image:
+      linear-gradient(to top right, transparent 50%, white 50%),
+      linear-gradient(to top left, transparent 50%, white 50%);
+    background-repeat: no-repeat;
+    background-position: 0 0, 100% 0;
+    background-size: 50.2% 100%;
+    @media @tablet-widths {
+      height: 73px;
+      bottom: -71px;
+    }
+  }
+  &__items {
+    @media @tablet-widths {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      @media @desktop-widths {
+        justify-content: space-around;
+      }
+    }
   }
   &__item {
     width: 246px;
     margin: 0 auto;
     text-align: center;
     padding-bottom: 27px;
+    &--street {
+      @media @tablet-widths {
+        margin: 0 auto;
+        padding-bottom: 30px;
+      }
+      @media @desktop-widths {
+        order: -1;
+      }
+    }
+    &--phone {
+      @media @desktop-widths {
+        order: -1;
+      }
+    }
   }
   &__item-info {
     display: block;
-    .title();
+    font-size: 18px;
+    line-height: 1.500em;
     color: @blue;
   }
   &__text {
-    .contacts-text ();
+    font-size: 24px;
+    line-height: 1.500em;
     color: @pink;
     text-decoration: none;
-  }
-}
-
-@media @tablet-widths {
-  .contacts {
-    &__slogan {
-      .tablet-slogan;
-      font-weight: normal;
-      width: 390px;
-      padding-top: 50px;
-      padding-bottom: 55px;
-    }
-    &__item {
-      float: left;
-      width: 310px;
-      padding-bottom: 25px;
-    }
-    &__item--street {
-      width: 620px;
-      margin: 0 auto;
-    }
-  }
-}
-
-@media @desktop-widths {
-  .contacts {
-    &__slogan {
-      .desktop-slogan ();
-      width: 475px;
-      padding-bottom: 120px;
-    }
-    &__item {
-      float: left;
-      width: 313px;
-    }
   }
 }

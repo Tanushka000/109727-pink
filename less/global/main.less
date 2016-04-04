@@ -1,26 +1,12 @@
-
 body {
   margin: 0;
   padding: 0;
-  .font-size ();
+  font-size: 18px;
+  line-height: 1.875em;
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
-  background-color: @white;
-  min-height: 2745px;
+  background-color: white;
 }
-@media @tablet-widths {
-  body {
-    min-height: 2935px;
-  }
-}
-@media @desktop-widths {
-  body {
-    min-height: 2335px;
-  }
-}
-
-
-
 .clearfix {
   &::after {
     content: "";
@@ -29,18 +15,13 @@ body {
   }
 }
 .container {
-  width: 280px;
+  width: 100%;
   margin: 0 auto;
-
   @media @tablet-widths {
     width: 620px;
   }
-
   @media @desktop-widths {
     width: 940px;
   }
 }
 
-.outline {
-  outline: 2px solid red;
-}

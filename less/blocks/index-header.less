@@ -1,51 +1,94 @@
 .index-header {
   position: relative;
   min-height:730px;
-  background: #1d2631 url("../../img/bg-back-mobile.jpg") no-repeat;
+  background: @dark-blue;
   padding: 0 20px;
   margin: 0 auto;
   text-align: center;
-  .outline ();
+  @media @tablet-widths {
+    min-height: 730px;
+  }
+  @media @desktop-widths {
+    min-height: 850px;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    height: 458px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: url("../../img/bg-back-mobile.jpg") no-repeat;
+    background-size: cover;
+    @media @tablet-widths {
+      height: 730px;
+    }
+    @media @desktop-widths {
+    min-height: 850px;
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 285px;
+    left: 0;
+    top: 174px;
+    background: url("../../img/iphone-hand-mobile.png") no-repeat;
+    @media @tablet-widths {
+      height: 546px;
+      left: 190px;
+      top: 184px;
+      background-size: 470px 546px;
+    }
+    @media @desktop-widths {
+      height: 640px;
+      left: 470px;
+      top: 210px;
+      background-size: 570px 645px;
+    }
+  }
   &__logo {
-    width: 75px;
-    height: 24px;
     position: absolute;
     top: 0;
     left: 0;
-    padding: 20px;
-    background: url("../../img/logo-pink-white-mobile.svg") no-repeat center;
-    z-index: 2;
-    .outline();
+    z-index: 4;
+    &--mobile {
+      width: 75px;
+      height: 24px;
+      padding: 20px;
+      @media @tablet-widths {
+        display: none;
+      }
+    }
+    &--tablet {
+      display: none;
+      @media @tablet-widths {
+        display: block;
+        width: 147px;
+        height: 40px;
+        padding: 25px 40px;
+      }
+     @media @desktop-widths {
+        display: none;
+      }
+    }
+    &--desktop {
+      display: none;
+      @media @desktop-widths {
+        display: block;
+        position: inherit;
+        float: left;
+        width: 147px;
+        height: 40px;
+        padding: 25px 40px;
+      }
+    }
   }
-}
-
-@media @tablet-widths {
-  .index-header {
-    min-height: 730px;
-    background-size: cover;
-    &__wrapper {
+  &__wrapper {
+    @media @tablet-widths {
       .container();
       .clearfix();
-    }
-    &__logo {
-      width: 147px;
-      height: 40px;
-      padding: 25px 40px;
-      background-image: url("../../img/logotype-white-tablet.svg") no-repeat center;
-    }
-  }
-}
-
-@media @desktop-widths {
-  .index-header {
-    min-height: 850px;
-    &__logo {
-      position: inherit;
-      z-index: 4;
-      float: left;
-      width: 147px;
-      height: 40px;
-      background-image: url("../../img/logotype-white-desktop.svg") no-repeat center;
     }
   }
 }

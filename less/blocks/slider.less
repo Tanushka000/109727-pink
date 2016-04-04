@@ -1,10 +1,68 @@
-@media @tablet-widths{
-  .slider {
-    display: none;
+.slider {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  margin: 0 auto;
+  @media @tablet-widths {
+  }
+  &__control {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    width: 106px;
+    height: 5px;
+    margin-left: -40px;
+    text-align:center;
+    z-index: 1000;
+    @media @desktop-widths {
+      display: none;
+    }
+  }
+  &__label {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    margin-right: 19px;
+    background: #b5b9be;
+    vertical-align: top;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  &--prices {
+    height: 448px;
   }
 }
-@media @desktop-widths {
-  .slider {
-    display: none;
-  }
+.slider input[type=radio] {
+  position: absolute;
+  opacity: 0;
 }
+#review-radio-1:checked ~ .slider__control label[for="review-radio-1"],
+#review-radio-2:checked ~ .slider__control label[for="review-radio-2"],
+#review-radio-3:checked ~ .slider__control label[for="review-radio-3"] {
+  border: 3px solid @dark-blue;
+}
+#review-radio-1:checked ~ .review__item:nth-of-type(1),
+#review-radio-2:checked ~ .review__item:nth-of-type(2),
+#review-radio-3:checked ~ .review__item:nth-of-type(3) {
+  display: block;
+}
+
+#price-radio-1:checked ~ .slider__control label[for="price-radio-1"],
+#price-radio-2:checked ~ .slider__control label[for="price-radio-2"],
+#price-radio-3:checked ~ .slider__control label[for="price-radio-3"] {
+  border: 3px solid @dark-blue;
+}
+
+#price-radio-1:checked ~ .prices__table {
+  transform: translateX(0%);
+}
+#price-radio-2:checked ~ .prices__table {
+  transform: translateX(-30%);
+}
+#price-radio-3:checked ~ .prices__table {
+  transform: translateX(-60%);
+}
+
+
+
+

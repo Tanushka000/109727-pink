@@ -1,47 +1,51 @@
 .photo {
-  .text();
+  font-size: 14px;
+  line-height: 1.875em;
   color: @blue;
   margin-bottom: 20px;
   background: @grey;
+  @media @tablet-widths {
+    width: 300px;
+    min-height: 455px;
+    margin-bottom: 20px;
+  }
+  @media @desktop-widths {
+    min-height: 600px;
+    margin-bottom: 60px;
+  }
+  &--panorama {
+    position: relative;
+    @media @tablet-widths {
+      width: 632px;
+    }
+    @media @desktop-widths {
+      width: 940px;
+    }
+  }
   &__description {
     padding-left: 18px;
     text-align: left;
   }
   &__auhor-name {
-    span {
-      font-weight: bold;
+    margin: 0;
+    font-weight: bold;
+  }
+  &__text {
+    margin: 0;
+  }
+  &__link {
+    &--panorama {
     }
   }
-}
-
-@media @tablet-widths {
-  .photo {
-    float: left;
-    width: 300px;
-    min-height: 455px;
-    margin-right: 20px;
-    margin-bottom: 50px;
-    &:nth-child(2n+1) {
-      margin-right: 0px;
-    }
-    &--panorama {
-      width: 620px;
-    }
-  }
-}
-
-@media @desktop-widths {
-  .photo {
-    min-height: 600px;
-    margin-bottom: 60px;
-    &:nth-child(2n+1) {
-      margin-right: 20px;
-    }
-    &:nth-child(3n+4) {
-      margin-right: 0px;
-    }
-    &--panorama {
-      width: 940px;
-    }
+  &__name {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 140px;
+    height: 30px;
+    background: @pink;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
   }
 }

@@ -1,56 +1,53 @@
 .page-footer {
-  min-height: 260px;
   padding: 0 20px;
-  .outline ();
+  @media @tablet-widths {
+    padding: 0;
+  }
   &--index {
     min-height: 615px;
   }
   &__map {
     background-image: url("../../img/bg-map.png");
+    width: 100%;
     min-height: 200px;
+    background-size: cover;
+    @media @tablet-widths {
+      min-height: 380px;
+    }
+    @media @desktop-widths {
+      min-height: 520px;
+    }
   }
   &__item--index {
     display: none;
-  }
-  &__item {
-    text-align: center;
-  }
-}
-
-@media @tablet-widths {
-  .page-footer {
-    min-height: 120px;
-    &__item {
-      float: left;
-      width: 180px;
-    }
-    &--index {
-      min-height: 910px;
-    }
-    &__wrapper {
-      .container ();
-      .clearfix ();
-    }
-    &__map {
-      min-height: 380px;
-    }
-    &__item--index {
+    @media @tablet-widths {
       display: block;
     }
   }
-}
-
-@media @desktop-widths {
-  .page-footer {
-    min-height: 170px;
-    &--index {
-      min-height: 1070px;
+  &__item {
+    padding: 18px 0;
+    text-align: center;
+    @media @tablet-widths {
+      padding: 35px 0;
+      width: 180px;
     }
-    &__item {
-      width: 300px;
+    @media @desktop-widths {
+      padding: 70px 0;
     }
-    &__map {
-      min-height: 520px;
+  }
+  &__wrapper {
+    @media @tablet-widths {
+      .container();
+      display: flex;
+      justify-content: space-between;
     }
+  }
+  &__developer-link {
+    display: inline-block;
+    vertical-align: top;
+    width: 30px;
+    height: 37px;
+    font-size: 0;
+    background: url("../../img/logo-htmlacademy.svg") no-repeat;
   }
 }
